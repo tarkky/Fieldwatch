@@ -2466,17 +2466,18 @@ def story():
         P("5.9.4 What a hit looks like", "h3"),
         figure_wrap(
             "fig-gnss-dialog.png",
-            "Fig. 24 — The detection dialog. The title is the level. The first lines are what changed on this phone’s receiver. OK dismisses the dialog. The red line stays.",
-            "The title is <b>Possible GNSS interference</b>, with Low, Medium, or High. "
-            "If spoofing checks are on and that pattern hits as well, the title is "
-            "<b>Possible GNSS interference and spoofing</b>. "
+            "Fig. 24 — The detection dialog. The title is Possible GPS interference, with the level. The first lines are what changed on this phone’s receiver. OK dismisses the dialog. The red line stays, and the GPS mark in the top bar is red.",
+            "The dialog title is <b>Possible GPS interference</b>, with Low, Medium, or High. "
+            "If spoofing checks are on and that pattern hits as well, the dialog title is "
+            "<b>Possible GPS interference and spoofing</b>. "
+            "The red line says GNSS for that same notice. "
             "The body names the bands that changed, such as GPS L1, and says a router or other electronics next to the phone can cause this. "
             "Fieldwatch cannot tell where it comes from or how far away it is. "
             "A mock location app is its own message. That is the developer mock-location switch, not a radio.",
         ),
         figure_wrap(
             "fig-gnss-live.png",
-            "Fig. 25 — After OK, the red line stays on Live until the hit ends. There is no Hide button. This is not the flood line.",
+            "Fig. 25 — After OK, the red line stays on Live until the hit ends. The GPS mark in the top bar is red for that same stretch. There is no Hide button. This is not the flood line.",
             "Dismiss the dialog and the red line stays across the top of Live: "
             "<b>Possible GNSS interference</b>, then the level. "
             "It stays until the condition ends. "
